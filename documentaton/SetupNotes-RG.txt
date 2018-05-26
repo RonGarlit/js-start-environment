@@ -8,6 +8,11 @@ gitcommit -m “added new feature”
 3. Push your work to Github
 gitpush
 
+4. git documentation online
+https://git-scm.com/doc
+
+modification test
+
 ===================================================
 My GitHub and Gist:
 https://github.com/RonGarlit
