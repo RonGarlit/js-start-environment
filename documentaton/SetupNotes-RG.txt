@@ -1,17 +1,20 @@
 ===================================================
 1. Stage all the files you changed
-gitadd .
+git add .
 
 2. Commit your changes locally
-gitcommit -m “added new feature”
+git commit -m “added new feature”
 
 3. Push your work to Github
-gitpush
+git push
 
-4. git documentation online
+4. Get the status of working folder at any time.
+   modified should be commited the pushed.
+git status
+
+5. git documentation online
 https://git-scm.com/doc
 
-modification test
 
 ===================================================
 My GitHub and Gist:
