@@ -31,3 +31,12 @@ https://github.com/viatsko/awesome-vscode
 
 https://gist.github.com/nickytonline/3d5ffeab871a6662d7a3f89bb0bed0f8
 
+=====================================================
+
+Web Server: Express in Node
+
+Also you can use local tunnel to show external in browser.
+Setup:
+1.  npminstall localtunnel-g
+2.  Start your app
+3.  lt--port 3000
