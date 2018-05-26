@@ -1,0 +1,25 @@
+===================================================
+1. Stage all the files you changed
+gitadd .
+
+2. Commit your changes locally
+gitcommit -m “added new feature”
+
+3. Push your work to Github
+gitpush
+
+===================================================
+My GitHub and Gist:
+https://github.com/RonGarlit
+
+Cory House examples:
+https://github.com/coryhouse
+https://github.com/coryhouse/javascript-development-environment
+https://www.bitnative.com/
+
+
+Others to follow on GitHub and Gist:
+https://github.com/viatsko/awesome-vscode
+
+https://gist.github.com/nickytonline/3d5ffeab871a6662d7a3f89bb0bed0f8
+
