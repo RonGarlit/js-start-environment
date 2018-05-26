@@ -1,4 +1,10 @@
 ===================================================
+Getting Started Requirements:
+1. Install Git
+2. Install Node 4 or greater (5 or greater recommended for optimum performance)
+3. Run ‘npm install’ in the root folder of each project.
+===================================================
+
 1. Stage all the files you changed
 git add .
 
