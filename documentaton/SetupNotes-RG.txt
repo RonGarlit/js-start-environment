@@ -1,9 +1,10 @@
-===================================================
+=====================================================
 Getting Started Requirements:
+=====================================================
 1. Install Git
 2. Install Node 4 or greater (5 or greater recommended for optimum performance)
 3. Run ‘npm install’ in the root folder of each project.
-===================================================
+=====================================================
 
 1. Stage all the files you changed
 git add .
@@ -24,11 +25,18 @@ git pull
 10. git documentation online
 https://git-scm.com/doc
 
+=====================================================
+Visual Studio Code Extensions To Add
+=====================================================
 
-===================================================
+
+
+=====================================================
 My GitHub and Gist:
 https://github.com/RonGarlit
-
+=====================================================
+GitHb Friendly's:
+=====================================================
 Cory House examples:
 https://github.com/coryhouse
 https://github.com/coryhouse/javascript-development-environment
@@ -44,27 +52,124 @@ https://github.com/viatsko/awesome-vscode
 https://gist.github.com/nickytonline/3d5ffeab871a6662d7a3f89bb0bed0f8
 
 =====================================================
-Node Security Project - npm
+Node Security Project - NSP
+=====================================================
 Instal globally:  npm install -g nsp
 
 Manual check:  nsp check
 
 =====================================================
+Create build script srcServer.js
 
 
+=====================================================
+Web Server: Express in Node
+=====================================================
+
+Configue express in srcServer.js buildscript
+import express from 'express';
+import path from 'path';
+import open from 'open';
+
+const port = 3000;
+const app = express();
+
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, '../src/index.html'));
+});
+
+app.listen(port, function(err) {
+  if (err) {
+    console.log(err);
+  } else {
+    open('http://localhost:' + port);
+  }
+});
+
+Run it using: node buildscripts/srcServer.js
+=====================================================
+NPM STUFF
+=====================================================
+Setup web server in the srcServer.js file
+
+node buildScripts/srcServer.js
+*****************************************************
+Documentation for NPM Scripts:
+https://docs.npmjs.com/misc/scripts
+
+npm-run-all --parallel  
+is used to run multiple tasks together in start npm script.
+https://www.npmjs.com/package/npm-run-all 
+https://github.com/mysticatea/npm-run-all 
+https://github.com/mysticatea/npm-run-all/blob/master/docs/npm-run-all.md 
+
+
+=====================================================
+To Run Main START Script:
+Full output
+npm start
+Silent output
+npm start -s 
+
+*** Decided to use NPM Script to avoid extra layers of abstraction you get with Grunt and Gulp.
+=====================================================
+FINAL VERSON OF MY NPM SCRIPTS
+=====================================================
+Defer to these NPM Automation Scripts:
+  "scripts": {
+    "prestart": "babel-node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel security-check open:src lint:watch test:watch start-mockapi",
+    "open:src": "babel-node buildScripts/srcServer.js",
+    "lint": "esw webpack.config.* src buildScripts --color",
+    "lint:watch": "npm run lint -- --watch",
+    "security-check": "nsp check",
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel open:src localtunnel",
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+    "test:watch": "npm run test -- --watch",
+    "generate-mock-data": "babel-node buildScripts/generateMockData",
+    "prestart-mockapi": "npm run generate-mock-data",
+    "start-mockapi": "json-server --watch src/api/db.json --port 3001",
+    "clean-dist": "rimraf ./dist && mkdir dist",
+    "prebuild": "npm-run-all clean-dist test lint",
+    "build": "babel-node buildScripts/build.js",
+    "postbuild": "babel-node buildScripts/distServer.js",
+    "deploy": "surge ./dist"  
+  },
+
+Read about NPM versus Gulp at: https://medium.freecodecamp.org/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8
+
+=====================================================
+Using chalk:
+Terminal string styling done right!! 
+=====================================================
+https://www.npmjs.com/package/chalk 
+https://github.com/chalk/chalk
+
+=====================================================
+TRANSPILING/TRANSPILERS
+=====================================================
 Babel is a compiler for writing next generation JavaScript. 
 https://babeljs.io/ 
 https://github.com/babel/babel
 
+VSCODE Extension for Babel:
+https://marketplace.visualstudio.com/items?itemName=joshpeng.sublime-babel-vscode#overview 
+
+
 =====================================================
-Web Server: Express in Node
-
-Configue express.
-
-
 
 Also you can use local tunnel to show external in browser.
 Setup:
 1.  npminstall localtunnel-g
 2.  Start your app
 3.  lt--port 3000
+
+
+
+=====================================================
+SUBJECT
+=====================================================
+=====================================================
+SUBJECT
+=====================================================
