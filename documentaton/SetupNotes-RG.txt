@@ -18,7 +18,10 @@ git push
    modified should be commited the pushed.
 git status
 
-5. git documentation online
+5.  From in working dir. pull down commited
+git pull
+
+10. git documentation online
 https://git-scm.com/doc
 
 
@@ -31,6 +34,9 @@ https://github.com/coryhouse
 https://github.com/coryhouse/javascript-development-environment
 https://www.bitnative.com/
 
+Cory's Base NPM Package JSON file.
+https://gist.github.com/coryhouse/29bd1029b623beb4c7f79b748dcba844 
+
 
 Others to follow on GitHub and Gist:
 https://github.com/viatsko/awesome-vscode
@@ -38,8 +44,24 @@ https://github.com/viatsko/awesome-vscode
 https://gist.github.com/nickytonline/3d5ffeab871a6662d7a3f89bb0bed0f8
 
 =====================================================
+Node Security Project - npm
+Instal globally:  npm install -g nsp
 
+Manual check:  nsp check
+
+=====================================================
+
+
+Babel is a compiler for writing next generation JavaScript. 
+https://babeljs.io/ 
+https://github.com/babel/babel
+
+=====================================================
 Web Server: Express in Node
+
+Configue express.
+
+
 
 Also you can use local tunnel to show external in browser.
 Setup:
