@@ -1,4 +1,12 @@
 =====================================================
+EVERY DAY COMMAND NM SCRIPTS
+=====================================================
+Manual linting:  npm run lint
+Watched linting: npm run lint:watch  (runs on every save)
+
+Also main start does a lot of parallel actions
+npm start (See main buildScripts folder)
+=====================================================
 GETTING STARTED REQUIREMENTS:
 =====================================================
 1. Install Git
@@ -91,6 +99,14 @@ app.listen(port, function(err) {
     open('http://localhost:' + port);
   }
 });
+=====================================================
+
+Also you can use local tunnel to show external in browser.
+Setup:
+1.  npminstall localtunnel-g
+2.  Start your app
+3.  lt--port 3000
+=====================================================
 
 Run it using: node buildscripts/srcServer.js
 =====================================================
@@ -165,14 +181,72 @@ BUNDLING
 Choice is to use WebPack:  https://webpack.js.org/
 https://webpack.github.io/
 
+=====================================================
+LINTING
+=====================================================
+https://eslint.org/
+https://eslint.org/docs/user-guide/getting-started
+https://github.com/eslint/eslint
+
+A list of awesome ESLint plugins, configs, etc
+https://github.com/dustinspecker/awesome-eslint
+https://github.com/dustinspecker/
+
+eslintwatch npm package
+https://www.npmjs.com/package/eslint-watch
+
+To disable linting at line level
+// eslint-disable-line no-console
+To disable linting in file
+/* eslint-disable no-console */
+
 
 =====================================================
+TESTING
+=====================================================
+KEEP TEST FILES ALONGSIDE SOURCE FILES
+NOT CENTRALIZED METHOD.  CLEAN TEST IN
+BUILD SCRIPT IN WebPack. COLOCATION TESTING.
+=====================================================
+Unit Testing Toolset
+Framework: mocha
+https://mochajs.org/
 
-Also you can use local tunnel to show external in browser.
-Setup:
-1.  npminstall localtunnel-g
-2.  Start your app
-3.  lt--port 3000
+Assertion Library: chai
+http://www.chaijs.com/
+
+Helper Library: jsdom
+HTML and browser tests
+https://github.com/jsdom/jsdom
+https://www.npmjs.com/package/node-jsdom
+
+Helper Library: cheerio
+JQuery selector like for server tests
+https://cheerio.js.org/
+https://github.com/cheeriojs/cheerio
+
+*** Might need to look at this at somw point
+Headless browser: phantomjs
+http://phantomjs.org/
+http://phantomjs.org/documentation/
+https://scotch.io/tutorials/what-is-phantomjs-and-how-is-it-used
+Also JSDOM can cover this.
+
+=====================================================
+CONTINOUS INTERGRATION
+=====================================================
+Linux Based: travis ci
+https://travis-ci.org/
+https://travis-ci.com/
+https://github.com/marketplace/travis-ci/plan/MDIyOk1hcmtldHBsYWNlTGlzdGluZ1BsYW43MA==#pricing-and-setup
+
+Windows Based:  appveyor ci
+https://www.appveyor.com/
+https://www.appveyor.com/docs/build-environment/
+https://github.com/marketplace/appveyor
+
+
+
 
 
 
