@@ -245,9 +245,50 @@ https://www.appveyor.com/
 https://www.appveyor.com/docs/build-environment/
 https://github.com/marketplace/appveyor
 
+=====================================================
+HTTP CALLS
+=====================================================
+(Browser Only) --------------------------------------
+FETCH ****** Future proof when it is done.
+Newest is FETCH still being built out, get the latest
+info here: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+https://github.com/github/fetch
+https://developers.google.com/web/updates/2015/03/introduction-to-fetch
+https://github.github.io/fetch/
+
+=====================================================
+(Node Specific) -------------------------------------
+HTTP
+https://nodejs.org/api/http.html
+https://www.w3schools.com/nodejs/nodejs_http.asp
+https://davidwalsh.name/nodejs-http-request
+
+REQUEST ****** Best if your node only
+https://www.npmjs.com/package/request
+http://stackabuse.com/the-node-js-request-module/
+
+XMLHTTPREQUEST
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+https://www.w3schools.com/xml/xml_http.asp
+
+=====================================================
+ISOMORPHIC-FETCH  (Node & Browser) -----------------
+https://www.npmjs.com/package/isomorphic-fetch
+https://github.com/matthew-andrews/isomorphic-fetch
+
+AXIOS ****** Nice if you must be in both Node & Browser
+https://www.npmjs.com/package/axios
+http://codeheaven.io/how-to-use-axios-as-your-http-client/
 
 
+SUPERAGENT
+https://github.com/visionmedia/superagent
+https://visionmedia.github.io/superagent/
+https://www.npmjs.com/package/superagent
 
+*****************************************************
+**** PLAN TO CENTRALIZE API CALLS *******************
+*****************************************************
 
 
 =====================================================
