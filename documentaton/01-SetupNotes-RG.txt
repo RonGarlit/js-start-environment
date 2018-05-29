@@ -1,5 +1,5 @@
 =====================================================
-EVERY DAY COMMAND NM SCRIPTS
+EVERY DAY COMMAND NPM SCRIPTS
 =====================================================
 Manual linting:  npm run lint
 Watched linting: npm run lint:watch  (runs on every save)
