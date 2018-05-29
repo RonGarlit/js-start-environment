@@ -34,7 +34,6 @@ git pull
 
 10. git documentation online
 https://git-scm.com/doc
-
 =====================================================
 VISUAL STUDIO CODE EXTENSIONS TO ADD
 =====================================================
@@ -46,7 +45,6 @@ code --list-extensions
 code --install-extension {extension id}
 code --uninstall-extension {extension id}
 code --disable-extensions
-
 =====================================================
 My GitHub and Gist:
 https://github.com/RonGarlit
@@ -61,23 +59,18 @@ https://www.bitnative.com/
 Cory's Base NPM Package JSON file.
 https://gist.github.com/coryhouse/29bd1029b623beb4c7f79b748dcba844
 
-
 Others to follow on GitHub and Gist:
 https://github.com/viatsko/awesome-vscode
 
 https://gist.github.com/nickytonline/3d5ffeab871a6662d7a3f89bb0bed0f8
-
 =====================================================
 NODE SECURITY PROJECT - NSP
 =====================================================
 Instal globally:  npm install -g nsp
 
 Manual check:  nsp check
-
 =====================================================
 Create build script srcServer.js
-
-
 =====================================================
 WEB SERVER: Express in Node
 =====================================================
@@ -102,15 +95,11 @@ app.listen(port, function(err) {
   }
 });
 =====================================================
-
 Also you can use local tunnel to show external in browser.
 Setup:
 1.  npminstall localtunnel-g
 2.  Start your app
 3.  lt--port 3000
-=====================================================
-
-Run it using: node buildscripts/srcServer.js
 =====================================================
 NPM STUFF
 =====================================================
@@ -126,7 +115,6 @@ is used to run multiple tasks together in start npm script.
 https://www.npmjs.com/package/npm-run-all
 https://github.com/mysticatea/npm-run-all
 https://github.com/mysticatea/npm-run-all/blob/master/docs/npm-run-all.md
-
 
 =====================================================
 To Run Main START Script:
@@ -182,7 +170,6 @@ BUNDLING
 =====================================================
 Choice is to use WebPack:  https://webpack.js.org/
 https://webpack.github.io/
-
 =====================================================
 LINTING
 =====================================================
@@ -201,7 +188,6 @@ To disable linting at line level
 // eslint-disable-line no-console
 To disable linting in file
 /* eslint-disable no-console */
-
 
 =====================================================
 TESTING
@@ -291,7 +277,10 @@ https://www.npmjs.com/package/superagent
 *****************************************************
 **** PLAN TO CENTRALIZE API CALLS *******************
 *****************************************************
-
+Configure all calls
+Handle preloaderlogic
+Handle errors
+Single seam for mocking
 
 =====================================================
 SUBJECT
