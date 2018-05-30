@@ -1,7 +1,7 @@
 ---------------------------------------------------
 ---------------------------------------------------
 git config --global user.name "RonGarlit"
-git config --global user.email "rongarlit@live.com
+git config --global user.email "rongarlit@live.com"
 git config --global color.ui auto
 
 ---------------------------------------------------
@@ -43,7 +43,7 @@ last change
 git reset --soft HEAD~1
 
 last change throwing everything else out
-git rest --hard HEAD~1
+git reset --hard HEAD~1
 
 ---------------------------------------------------
 git-clean - Remove untracked files from the working tree
