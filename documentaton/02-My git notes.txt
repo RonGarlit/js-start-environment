@@ -1,3 +1,11 @@
+---------------------------------------------------
+---------------------------------------------------
+git config --global user.name "RonGarlit"
+git config --global user.email "rongarlit@live.com
+git config --global color.ui auto
+
+---------------------------------------------------
+---------------------------------------------------
 git-log - Show commit logs
 https://git-scm.com/docs/git-log
 
