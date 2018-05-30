@@ -120,6 +120,7 @@ https://github.com/mysticatea/npm-run-all/blob/master/docs/npm-run-all.md
 To Run Main START Script:
 Full output
 npm start
+
 Silent output
 npm start -s
 
@@ -281,6 +282,62 @@ Configure all calls
 Handle preloaderlogic
 Handle errors
 Single seam for mocking
+
+=====================================================
+MOCKING API CALLS
+=====================================================
+
+NOCK:
+https://www.npmjs.com/package/nock
+
+USE PLAIN STATIC JSON
+See exanple JSON array in db.json file in API folder under src,
+
+-OR- CREATE WEBSERVER USING:
+
+API_MOCK
+https://www.npmjs.com/package/api-mock
+
+JSON SERVER
+https://www.npmjs.com/package/json-server
+https://github.com/typicode/json-server
+
+
+JSON SCHEMA FAKER
+https://www.npmjs.com/package/json-schema-faker
+http://json-schema-faker.js.org/
+https://github.com/json-schema-faker/
+
+-OR- STAND UP REAL API SERVER
+
+=====================================================
+GENERAL PLAN TO MOCK HTTP
+=====================================================
+1) DECLARE SCHEMA USING:
+http://json-schema-faker.js.org/
+
+2) GENERATING RANDOM MOCK DATA: USING
+FAKERJS:  (CURRENT CHOICE)
+https://www.npmjs.com/package/faker
+
+-or-
+CHANCE JS:
+http://chancejs.com/
+https://www.npmjs.com/package/chance
+
+3) SERVE DATA VIA API ON: JSON SERVER
+https://www.npmjs.com/package/json-server
+https://github.com/typicode/json-server
+-----------------------------------------------------
+JSON SCHEMA STANDARD CHOICE:
+http://json-schema.org/
+
+
+
+
+
+
+
 
 =====================================================
 SUBJECT

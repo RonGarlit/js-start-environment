@@ -4,6 +4,11 @@ git config --global user.name "RonGarlit"
 git config --global user.email "rongarlit@live.com"
 git config --global color.ui auto
 
+LIST CONFIG INFORMATION
+git config -l
+git config --list
+git config -l --global
+
 ---------------------------------------------------
 ---------------------------------------------------
 git-log - Show commit logs
