@@ -334,6 +334,91 @@ http://json-schema.org/
 
 
 
+=====================================================
+****** IMPORT PROJECT NOTES *************************
+=====================================================
+THIS IS LIKE A REFERENCE APP FOR A
+REFERENCE ARCHITECTURE.
+----------------------------------------------------
+Have and example/reference app.
+
+Key Project structure tips
+1) Put JS in a .js file --NO INLINE CODE EVER--
+
+2) Consider organizing by feature
+- Not the old MVC file based way.
+  /components
+  /data
+  /models
+  /views
+
+DO THIS:
+- Organize by Feature
+  /authors
+  /students
+  /courses
+  /Testing
+  /grades
+  ...
+
+3) Extract logic into “POJOs”
+- Keep logic in Plain Old JavaScript Objects
+- No framework Specific code in tos POJO's
+
+=====================================================
+PRODUCTION BUILD SETUP
+=====================================================
+setup webpack.config.prod.js
+
+SourceMap Settings:
+change
+  devtool: 'inline-source-map',
+to
+  devtool: 'source-map',
+
+Output Path Settings:
+change
+    path: path.resolve(__dirname, 'src'),
+to
+    path: path.resolve(__dirname, 'dist'),
+
+Minification Setup:
+change
+  plugins: [
+    // Create HTML file that includes reference to bundled JS.
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+      inject: true
+    })
+  ],
+to
+    plugins: [
+    // Create HTML file that includes reference to bundled JS.
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+      inject: true
+    })
+
+    // Eliminate duplicate packages when generating bundle
+    new webpack.optimize.DedupePlugin(),
+
+    // Minify JS
+    new webpack.optimize.UglifyJsPlugin()
+  ],
+
+
+
+
+
+
+
+    // Eliminate duplicate packages when generating bundle
+    new webpack.optimize.DedupePlugin(),
+
+    // Minify JS
+    new webpack.optimize.UglifyJsPlugin()
+
+
 
 
 
