@@ -406,23 +406,27 @@ to
     new webpack.optimize.UglifyJsPlugin()
   ],
 
+=====================================================
+ERROR TRACKING SERVICES
+=====================================================
+
+https://trackjs.com/
+https://raygun.com/
 
 
+=====================================================
+HTML TEMPLATING
+=====================================================
+WEBPACK DEFAULTS TO EJS
 
+http://www.ejs.co/
+https://www.npmjs.com/package/ejs
 
+JADE
+THe OLD JADE that we hated has been deprecated (See pug)
 
-
-    // Eliminate duplicate packages when generating bundle
-    new webpack.optimize.DedupePlugin(),
-
-    // Minify JS
-    new webpack.optimize.UglifyJsPlugin()
-
-
-
-
-
-
+MUSTACHE
+https://www.npmjs.com/package/mustache
 
 =====================================================
 SUBJECT
