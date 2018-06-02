@@ -429,8 +429,20 @@ MUSTACHE
 https://www.npmjs.com/package/mustache
 
 =====================================================
-SUBJECT
+CLOUD DEPLOY OPTIONS
 =====================================================
+API:
+https://www.heroku.com/home
+
+STATIC FRONT END:
+http://surge.sh/
+
 =====================================================
-SUBJECT
+STARTER KIT SUGGSTIONS FROM CORY
 =====================================================
+
+REACT:
+www.andrewhfarmer.com/starter-project
+
+ANGUALRJS SEED:
+https://github.com/GIANARB/AWESOME-ANGULARJS
